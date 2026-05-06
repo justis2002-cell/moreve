@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Moreve | Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Moreve"></a>
+    </div>
+    <nav class="gnb">
+      <a href="outer.html">OUTER</a>
+      <a href="top.html">TOP</a>
+      <a href="dress.html">DRESS</a>
+      <a href="bottom.html">BOTTOM</a>
+    </nav>
+    <div class="util">
+      <a href="#">로그인</a>
+      <a href="#">회원가입</a>
+      <a href="cart.html" class="cart">CART <span class="num" id="cartCount">0</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- PRODUCT DETAIL -->
+<section class="pd-wrap">
+  <div class="pd-images">
+    <div class="pd-main-img pi1"></div>
+    <div class="pd-thumbs">
+      <div class="pd-thumb pi1 active"></div>
+      <div class="pd-thumb pi2"></div>
+      <div class="pd-thumb pi3"></div>
+      <div class="pd-thumb pi4"></div>
+    </div>
+  </div>
+
+  <div class="pd-info">
+    <p class="pd-cat">OUTER</p>
+    <h1 class="pd-name">롱 트렌치 코트</h1>
+    <p class="pd-price">189,000<span>원</span></p>
+
+    <div class="pd-row">
+      <p class="pd-label">COLOR</p>
+      <div class="pd-colors">
+        <span class="pd-color" style="background:#d4cdb8;" data-color="베이지"></span>
+        <span class="pd-color" style="background:#2a2a2a;" data-color="블랙"></span>
+        <span class="pd-color" style="background:#6b5c4a;" data-color="브라운"></span>
+      </div>
+    </div>
+
+    <div class="pd-row">
+      <p class="pd-label">SIZE</p>
+      <div class="pd-sizes">
+        <button class="pd-size">S</button>
+        <button class="pd-size">M</button>
+        <button class="pd-size">L</button>
+        <button class="pd-size">XL</button>
+      </div>
+    </div>
+
+    <div class="pd-row">
+      <p class="pd-label">QUANTITY</p>
+      <div class="pd-qty">
+        <button id="qtyMinus">-</button>
+        <span id="qtyNum">1</span>
+        <button id="qtyPlus">+</button>
+      </div>
+    </div>
+
+    <div class="pd-total">
+      <span>TOTAL</span>
+      <span class="pd-total-price"><span id="totalPrice">189,000</span>원</span>
+    </div>
+
+    <div class="pd-buttons">
+      <button class="btn-cart" id="addCart">장바구니 담기</button>
+      <button class="btn-buy">바로 구매</button>
+    </div>
+
+    <div class="pd-desc">
+      <p>고급스러운 실루엣의 롱 트렌치 코트.</p>
+      <p>봄/가을 데일리룩으로 완벽한 아이템입니다.</p>
+      <ul>
+        <li>소재: 코튼 95%, 폴리에스터 5%</li>
+        <li>제조국: 대한민국</li>
+        <li>세탁: 드라이클리닝</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
