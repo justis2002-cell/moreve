@@ -1108,3 +1108,43 @@ nav a:hover::after {
 .collection .col-item:hover .col-img {
   transform: scale(1.03);
 }
+
+/* 카드 도미노 효과 - 좌→우 시차 등장 */
+.product-grid .product.fade-in,
+.new-grid .product.fade-in,
+.cat-products .product.fade-in {
+  transition-delay: 0s;
+}
+
+.product-grid .product.fade-in:nth-child(1),
+.new-grid .product.fade-in:nth-child(1),
+.cat-products .product.fade-in:nth-child(1) { transition-delay: 0s; }
+
+.product-grid .product.fade-in:nth-child(2),
+.new-grid .product.fade-in:nth-child(2),
+.cat-products .product.fade-in:nth-child(2) { transition-delay: 0.1s; }
+
+.product-grid .product.fade-in:nth-child(3),
+.new-grid .product.fade-in:nth-child(3),
+.cat-products .product.fade-in:nth-child(3) { transition-delay: 0.2s; }
+
+.product-grid .product.fade-in:nth-child(4),
+.new-grid .product.fade-in:nth-child(4),
+.cat-products .product.fade-in:nth-child(4) { transition-delay: 0.3s; }
+
+.product-grid .product.fade-in:nth-child(5),
+.new-grid .product.fade-in:nth-child(5),
+.cat-products .product.fade-in:nth-child(5) { transition-delay: 0.4s; }
+
+.product-grid .product.fade-in:nth-child(6),
+.new-grid .product.fade-in:nth-child(6),
+.cat-products .product.fade-in:nth-child(6) { transition-delay: 0.5s; }
+
+.product-grid .product.fade-in:nth-child(7),
+.new-grid .product.fade-in:nth-child(7),
+.cat-products .product.fade-in:nth-child(7) { transition-delay: 0.6s; }
+
+.product-grid .product.fade-in:nth-child(8),
+.new-grid .product.fade-in:nth-child(8),
+.cat-products .product.fade-in:nth-child(8) { transition-delay: 0.7s; }
+
