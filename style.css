@@ -901,6 +901,12 @@ body.intro-active {
   opacity: 0;
   transform: translateY(20px);
   animation: letterFade 0.9s forwards;  /* 0.5s → 0.9s (더 천천히) */
+  animation-play-state: paused;  /* 처음엔 멈춰둠 */
+}
+
+/* 인트로 끝나면 애니메이션 시작 */
+body.intro-done .hero-title > .line > span {
+  animation-play-state: running;
 }
 
 /* Line 1: Love */

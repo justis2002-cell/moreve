@@ -8,6 +8,7 @@ if (introVideo && introMovie) {
   if (hasSeenIntro) {
     // 이미 봤으면 즉시 제거
     introVideo.style.display = 'none';
+    document.body.classList.add('intro-done');  // ← 추가 (영상 안 봐도 애니메이션 재생)
   } else {
     // 처음 방문 시에만 인트로 실행
     document.body.classList.add('intro-active');
@@ -16,6 +17,7 @@ if (introVideo && introMovie) {
     function hideIntro() {
       introVideo.classList.add('hide');
       document.body.classList.remove('intro-active');
+      document.body.classList.add('intro-done');  // ← 추가
 
       setTimeout(() => {
         introVideo.style.display = 'none';
