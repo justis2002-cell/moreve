@@ -1148,3 +1148,9 @@ nav a:hover::after {
 .new-grid .product.fade-in:nth-child(8),
 .cat-products .product.fade-in:nth-child(8) { transition-delay: 0.7s; }
 
+
+.cat-products .product.fade-in {
+  opacity: 1;
+  transform: none;
+} 
+
